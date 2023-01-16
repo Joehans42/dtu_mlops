@@ -1,0 +1,110 @@
+Mon Jan 16 02:49:15 2023    profile_output.Profile
+
+         27512497 function calls (27467065 primitive calls) in 118.987 seconds
+
+   Ordered by: cumulative time
+   List reduced from 5571 to 100 due to restriction <100>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+   1364/1    0.037    0.000  118.992  118.992 {built-in method builtins.exec}
+        1    0.190    0.190  118.992  118.992 vae_mnist_working.py:1(<module>)
+     3006    0.047    0.000   86.298    0.029 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py:623(__next__)
+     3006    0.098    0.000   86.070    0.029 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py:669(_next_data)
+     3001    0.029    0.000   85.154    0.028 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py:53(fetch)
+     3001    0.561    0.000   83.059    0.028 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py:58(<listcomp>)
+   300100    3.899    0.000   82.499    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torchvision/datasets/mnist.py:130(__getitem__)
+   300100    0.945    0.000   57.547    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torchvision/transforms/transforms.py:93(__call__)
+   300100    1.198    0.000   56.601    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torchvision/transforms/transforms.py:127(__call__)
+   300100    9.629    0.000   55.403    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torchvision/transforms/functional.py:122(to_tensor)
+   300218    2.682    0.000   25.024    0.000 {built-in method numpy.array}
+   300100    1.463    0.000   21.848    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/PIL/Image.py:674(__array_interface__)
+   300103    2.593    0.000   19.762    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/PIL/Image.py:2943(fromarray)
+   300103    2.727    0.000   16.400    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/PIL/Image.py:2886(frombuffer)
+   300100    5.164    0.000   15.145    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/PIL/Image.py:717(tobytes)
+   300103    2.581    0.000    8.514    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/PIL/Image.py:2809(new)
+     3000    0.091    0.000    7.263    0.002 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torch/optim/optimizer.py:135(wrapper)
+     3000    0.057    0.000    6.866    0.002 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torch/optim/optimizer.py:19(_use_grad)
+     3000    0.391    0.000    6.738    0.002 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torch/optim/adam.py:168(step)
+     3000    0.031    0.000    6.596    0.002 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torch/_tensor.py:429(backward)
+     3000    0.062    0.000    6.561    0.002 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torch/autograd/__init__.py:103(backward)
+     3000    6.384    0.002    6.384    0.002 {method 'run_backward' of 'torch._C._EngineBase' objects}
+     3000    0.028    0.000    5.996    0.002 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torch/optim/adam.py:257(adam)
+     3000    1.399    0.000    5.803    0.002 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torch/optim/adam.py:319(_single_tensor_adam)
+24011/3002    0.141    0.000    5.596    0.002 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torch/nn/modules/module.py:1188(_call_impl)
+     3001    0.036    0.000    5.558    0.002 vae_mnist_working.py:79(forward)
+   300100    2.113    0.000    5.240    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/PIL/Image.py:238(_conv_type_shape)
+   600203    2.756    0.000    4.515    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/PIL/Image.py:531(_new)
+    15007    0.102    0.000    4.450    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torch/nn/modules/linear.py:113(forward)
+    15007    4.300    0.000    4.300    0.000 {built-in method torch._C._nn.linear}
+  1245/10    0.019    0.000    4.258    0.426 <frozen importlib._bootstrap>:1022(_find_and_load)
+  1244/10    0.015    0.000    4.257    0.426 <frozen importlib._bootstrap>:987(_find_and_load_unlocked)
+  1140/10    0.016    0.000    4.251    0.425 <frozen importlib._bootstrap>:664(_load_unlocked)
+   1077/9    0.008    0.000    4.249    0.472 <frozen importlib._bootstrap_external>:877(exec_module)
+  1522/11    0.006    0.000    4.230    0.385 <frozen importlib._bootstrap>:233(_call_with_frames_removed)
+        2    0.000    0.000    3.979    1.989 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torchvision/datasets/mnist.py:83(__init__)
+        2    0.000    0.000    3.861    1.931 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torchvision/datasets/mnist.py:173(download)
+        4    0.000    0.000    3.860    0.965 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torchvision/datasets/utils.py:433(download_and_extract_archive)
+   600209    2.367    0.000    3.830    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/PIL/Image.py:2791(_check_size)
+2849499/2849110    3.644    0.000    3.716    0.000 {built-in method builtins.isinstance}
+        4    0.000    0.000    3.464    0.866 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torchvision/datasets/utils.py:119(download_url)
+   300110    1.881    0.000    3.292    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torchvision/utils.py:538(_log_api_usage_once)
+   652/56    0.004    0.000    3.262    0.058 {built-in method builtins.__import__}
+   300103    1.921    0.000    3.211    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/PIL/Image.py:406(_getencoder)
+        1    0.010    0.010    3.184    3.184 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torch/__init__.py:1(<module>)
+     3001    0.158    0.000    3.111    0.001 vae_mnist_working.py:44(forward)
+ 1084/200    0.012    0.000    3.099    0.015 <frozen importlib._bootstrap>:1053(_handle_fromlist)
+2473692/2471906    3.001    0.000    3.006    0.000 {built-in method builtins.len}
+  2100712    2.601    0.000    2.601    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/PIL/Image.py:527(size)
+   300100    2.486    0.000    2.486    0.000 {method 'div' of 'torch._C._TensorBase' objects}
+     3000    0.186    0.000    2.390    0.001 vae_mnist_working.py:94(loss_function)
+     3002    0.047    0.000    2.344    0.001 vae_mnist_working.py:67(forward)
+     3000    0.178    0.000    2.342    0.001 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torch/optim/optimizer.py:246(zero_grad)
+     4210    0.039    0.000    2.314    0.001 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/socket.py:691(readinto)
+   600200    1.531    0.000    2.274    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/PIL/Image.py:523(height)
+   600200    1.513    0.000    2.251    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/PIL/Image.py:519(width)
+     4210    2.239    0.001    2.239    0.001 {method 'recv_into' of '_socket.socket' objects}
+   300107    1.240    0.000    2.171    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torch/jit/_trace.py:1017(is_tracing)
+     3000    0.049    0.000    2.096    0.001 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torch/nn/functional.py:3029(binary_cross_entropy)
+     3001    0.013    0.000    2.059    0.001 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torch/utils/data/_utils/collate.py:204(default_collate)
+9003/3001    0.126    0.000    2.046    0.001 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torch/utils/data/_utils/collate.py:88(collate)
+     3000    2.016    0.001    2.016    0.001 {built-in method torch._C._nn.binary_cross_entropy}
+   303115    2.004    0.000    2.004    0.000 {method 'to' of 'torch._C._TensorBase' objects}
+        8    0.000    0.000    2.000    0.250 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/urllib/request.py:139(urlopen)
+        8    0.000    0.000    1.996    0.250 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/urllib/request.py:500(open)
+        8    0.000    0.000    1.995    0.249 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/urllib/request.py:529(_open)
+       16    0.000    0.000    1.995    0.125 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/urllib/request.py:489(_call_chain)
+        8    0.000    0.000    1.995    0.249 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/urllib/request.py:1376(http_open)
+        8    0.000    0.000    1.995    0.249 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/urllib/request.py:1307(do_open)
+    29990    1.984    0.000    1.984    0.000 {method 'zero_' of 'torch._C._TensorBase' objects}
+2987/1459    0.314    0.000    1.915    0.001 {method 'read' of '_io.BufferedReader' objects}
+        4    0.000    0.000    1.832    0.458 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torchvision/datasets/utils.py:90(_get_redirect_url)
+     6190    0.418    0.000    1.627    0.000 {built-in method builtins.all}
+        4    0.000    0.000    1.597    0.399 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torchvision/datasets/utils.py:46(_urlretrieve)
+   900306    1.591    0.000    1.591    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/PIL/Image.py:500(__init__)
+        4    0.005    0.001    1.423    0.356 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torchvision/datasets/utils.py:31(_save_response_content)
+    60000    1.417    0.000    1.417    0.000 {method 'mul_' of 'torch._C._TensorBase' objects}
+   303108    1.386    0.000    1.386    0.000 {method 'view' of 'torch._C._TensorBase' objects}
+   300106    0.935    0.000    1.344    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/PIL/Image.py:819(load)
+   300103    1.317    0.000    1.317    0.000 {method 'permute' of 'torch._C._TensorBase' objects}
+   300103    1.298    0.000    1.298    0.000 {method 'numpy' of 'torch._C._TensorBase' objects}
+      360    0.002    0.000    1.296    0.004 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torchvision/datasets/utils.py:48(<lambda>)
+      360    0.004    0.000    1.294    0.004 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/http/client.py:450(read)
+   300100    0.818    0.000    1.253    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/PIL/Image.py:1290(getbands)
+   300100    0.784    0.000    1.161    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torchvision/transforms/functional.py:112(_is_numpy)
+   300100    0.797    0.000    1.157    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torchvision/transforms/functional_pil.py:16(_is_pil_image)
+   300100    0.734    0.000    1.088    0.000 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torch/utils/data/_utils/collate.py:138(<genexpr>)
+        8    0.000    0.000    1.062    0.133 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/http/client.py:1330(getresponse)
+        8    0.000    0.000    1.061    0.133 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/http/client.py:311(begin)
+      159    0.004    0.000    1.045    0.007 {method 'readline' of '_io.BufferedReader' objects}
+        8    0.000    0.000    1.042    0.130 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/http/client.py:278(_read_status)
+        1    0.000    0.000    1.027    1.027 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/site-packages/torchvision/__init__.py:1(<module>)
+    30000    0.970    0.000    0.970    0.000 {method 'sqrt' of 'torch._C._TensorBase' objects}
+   300100    0.958    0.000    0.958    0.000 {built-in method torch.from_numpy}
+        8    0.000    0.000    0.932    0.117 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/http/client.py:1279(request)
+        8    0.000    0.000    0.932    0.117 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/http/client.py:1284(_send_request)
+        8    0.000    0.000    0.930    0.116 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/http/client.py:1266(endheaders)
+        8    0.000    0.000    0.930    0.116 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/http/client.py:1028(_send_output)
+        8    0.000    0.000    0.929    0.116 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/http/client.py:967(send)
+        8    0.000    0.000    0.929    0.116 /home/johannes/anaconda3/envs/mlops_venv/lib/python3.10/http/client.py:938(connect)
+
+
